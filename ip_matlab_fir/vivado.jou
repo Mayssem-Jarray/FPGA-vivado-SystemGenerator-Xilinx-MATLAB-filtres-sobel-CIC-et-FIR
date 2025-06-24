@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May 17 15:04:09 2025
+# Process ID: 8924
+# Current directory: C:/Users/dell/Desktop/PFA_PROJET_FINAL/ip_matlab_fir
+# Command line: vivado.exe -mode batch -source ProjectGeneration.tcl -notrace
+# Log file: C:/Users/dell/Desktop/PFA_PROJET_FINAL/ip_matlab_fir/vivado.log
+# Journal file: C:/Users/dell/Desktop/PFA_PROJET_FINAL/ip_matlab_fir\vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace

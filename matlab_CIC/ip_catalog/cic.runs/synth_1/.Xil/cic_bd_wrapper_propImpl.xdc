@@ -1,0 +1,8 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/constrs_1/imports/sysgen/cic_clock.xdc rfile:../../../cic.srcs/constrs_1/imports/sysgen/cic_clock.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/constrs_1/imports/sysgen/cic.xdc rfile:../../../cic.srcs/constrs_1/imports/sysgen/cic.xdc id:2} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -name clk -period 20.000 [get_ports clk]
+set_property src_info {type:XDC file:2 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_multicycle_path -from [get_cells -of [filter [all_fanout -flat -endpoints [get_pins {cic_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[1].ce_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/Q}]] IS_ENABLE]] -to [get_cells -of [filter [all_fanout -flat -endpoints [get_pins {cic_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[1].ce_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/Q}]] IS_ENABLE]] -setup 2
+set_property src_info {type:XDC file:2 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_multicycle_path -from [get_cells -of [filter [all_fanout -flat -endpoints [get_pins {cic_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[1].ce_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/Q}]] IS_ENABLE]] -to [get_cells -of [filter [all_fanout -flat -endpoints [get_pins {cic_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[1].ce_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/Q}]] IS_ENABLE]] -hold 1

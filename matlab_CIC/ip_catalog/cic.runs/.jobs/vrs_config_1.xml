@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="cic_bd_auto_pc_0_synth_1" LaunchDir="C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cic_bd_processing_system_1_0_synth_1" LaunchDir="C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_processing_system_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cic_bd_cic_1_0_synth_1" LaunchDir="C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cic_bd_rst_processing_system_1_50M_0_synth_1" LaunchDir="C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_rst_processing_system_1_50M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="cic_bd_auto_pc_0_synth_1"/>
+		<Parent Id="cic_bd_processing_system_1_0_synth_1"/>
+		<Parent Id="cic_bd_cic_1_0_synth_1"/>
+		<Parent Id="cic_bd_rst_processing_system_1_50M_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

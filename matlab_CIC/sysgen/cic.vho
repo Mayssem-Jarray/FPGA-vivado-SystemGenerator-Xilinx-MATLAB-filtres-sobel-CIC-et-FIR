@@ -1,0 +1,25 @@
+  sysgen_dut : entity xil_defaultlib.cic 
+  port map (
+    clk => clk,
+    cic_aresetn => cic_aresetn,
+    cic_s_axi_awaddr => cic_s_axi_awaddr,
+    cic_s_axi_awvalid => cic_s_axi_awvalid,
+    cic_s_axi_wdata => cic_s_axi_wdata,
+    cic_s_axi_wstrb => cic_s_axi_wstrb,
+    cic_s_axi_wvalid => cic_s_axi_wvalid,
+    cic_s_axi_bready => cic_s_axi_bready,
+    cic_s_axi_araddr => cic_s_axi_araddr,
+    cic_s_axi_arvalid => cic_s_axi_arvalid,
+    cic_s_axi_rready => cic_s_axi_rready,
+    gateway_out1 => gateway_out1,
+    gateway_out2 => gateway_out2,
+    gateway_out3 => gateway_out3,
+    cic_s_axi_awready => cic_s_axi_awready,
+    cic_s_axi_wready => cic_s_axi_wready,
+    cic_s_axi_bresp => cic_s_axi_bresp,
+    cic_s_axi_bvalid => cic_s_axi_bvalid,
+    cic_s_axi_arready => cic_s_axi_arready,
+    cic_s_axi_rdata => cic_s_axi_rdata,
+    cic_s_axi_rresp => cic_s_axi_rresp,
+    cic_s_axi_rvalid => cic_s_axi_rvalid
+  );

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 22 12:55:32 2025
+# Process ID: 19576
+# Current directory: C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_processing_system_1_0_synth_1
+# Command line: vivado.exe -log cic_bd_processing_system_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cic_bd_processing_system_1_0.tcl
+# Log file: C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_processing_system_1_0_synth_1/cic_bd_processing_system_1_0.vds
+# Journal file: C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_processing_system_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cic_bd_processing_system_1_0.tcl -notrace

@@ -1,0 +1,198 @@
+# Vivado resource utilization data is represented in anytable format
+# The data will be consumed by Resource Utilization flow in SysGen.
+
+{
+   'Design_Information' => [
+     { 
+        'PART' => 'xc7z020clg484-1',
+        'Vivado_Stage' => 'Post Synthesis',
+        'Top_Module' => 'cic',
+        'HDL_Language' => 'vhdl',
+        'Netlist_Crossprobe_File' => 'cic.vhd.at',
+     },
+   ],
+   'Device_Resources' => [
+     { 
+        'BRAMs' => '140',
+        'DSPs' => '220',
+        'Registers' => '106400',
+        'LUTs' => '53200',
+     },
+   ],
+   'Resource_Utilization_Data' => [
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_39',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.addsub1',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/addsub1',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 4,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_48',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.addsub2',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/addsub2',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 4,
+                    'LUT2' => 16,
+                    'Total_LUTs' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_57',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.addsub3',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/addsub3',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 4,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_66',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.addsub4',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/addsub4',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 4,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_75',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.addsub6',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/addsub6',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 4,
+                    'LUT2' => 16,
+                    'Total_LUTs' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_84',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.addsub7',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/addsub7',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 5,
+                    'LUT2' => 16,
+                    'Total_LUTs' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_93',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.delay',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/delay',
+          'Primitives' => [ 
+               {
+                    'SRL16E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_101',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.delay1',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/delay1',
+          'Primitives' => [ 
+               {
+                    'SRL16E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_109',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.delay2',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/delay2',
+          'Primitives' => [ 
+               {
+                    'SRL16E' => 16,
+                    'FDRE' => 16,
+                    'Total_LUTs' => 16,
+                    'Total_Registers' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_130',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.register1',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/register1',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 16,
+                    'LUT2' => 16,
+                    'Total_Registers' => 16,
+                    'Total_LUTs' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_143',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.register2',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/register2',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 16,
+                    'LUT2' => 16,
+                    'Total_Registers' => 16,
+                    'Total_LUTs' => 16,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_117',
+          'Hier_Name' => 'cic_bd_wrapper.cic_bd_i.cic_1.inst.cic_struct.register_x0',
+          'Cell_Name' => 'cic_bd_i/cic_1/inst/cic_struct/register_x0',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 15,
+                    'FDSE' => 1,
+                    'LUT2' => 14,
+                    'Total_Registers' => 16,
+                    'Total_LUTs' => 14,
+               },
+          ], 
+     },
+     { 
+          'File_Name' => 'cic.vhd',
+          'Line_Num' => 'Line_000',
+          'Hier_Name' => 'cic',
+          'Cell_Name' => 'cic',
+          'Primitives' => [ 
+               { 
+                    'CARRY4' => 25,
+                    'LUT2' => 94,
+                    'SRL16E' => 48,
+                    'FDRE' => 95,
+                    'FDSE' => 1,
+                    'Total_LUTs' => 142,
+                    'Total_Registers' => 96,
+               },
+          ],
+     },
+   ],
+} 

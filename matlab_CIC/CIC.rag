@@ -1,0 +1,179 @@
+{
+  'total' => {
+    'BRAMs' => '140',
+    'DSPs' => '220',
+    'LUTs' => '53200',
+    'Registers' => '106400'
+  },
+  'utilization' => [
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 4.00012207031,
+      'Hier_Name' => 'CIC/AddSub1',
+      'Name' => 'AddSub1',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 0.00000000000,
+        'Registers' => 0.00000000000
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 5.00012207031,
+      'Hier_Name' => 'CIC/AddSub2',
+      'Name' => 'AddSub2',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 16,
+        'Registers' => 0.00000000000
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 6.00012207031,
+      'Hier_Name' => 'CIC/AddSub3',
+      'Name' => 'AddSub3',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 0.00000000000,
+        'Registers' => 0.00000000000
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 7.00012207031,
+      'Hier_Name' => 'CIC/AddSub4',
+      'Name' => 'AddSub4',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 0.00000000000,
+        'Registers' => 0.00000000000
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 8.00012207031,
+      'Hier_Name' => 'CIC/AddSub6',
+      'Name' => 'AddSub6',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 16,
+        'Registers' => 0.00000000000
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 9.00012207031,
+      'Hier_Name' => 'CIC/AddSub7',
+      'Name' => 'AddSub7',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 16,
+        'Registers' => 0.00000000000
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 10.00012207031,
+      'Hier_Name' => 'CIC/Delay',
+      'Name' => 'Delay',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 16,
+        'Registers' => 16
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 11.00012207031,
+      'Hier_Name' => 'CIC/Delay1',
+      'Name' => 'Delay1',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 16,
+        'Registers' => 16
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 12.00012207031,
+      'Hier_Name' => 'CIC/Delay2',
+      'Name' => 'Delay2',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 16,
+        'Registers' => 16
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 18.00012207031,
+      'Hier_Name' => 'CIC/Register1',
+      'Name' => 'Register1',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 16,
+        'Registers' => 16
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 19.00012207031,
+      'Hier_Name' => 'CIC/Register2',
+      'Name' => 'Register2',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 16,
+        'Registers' => 16
+      }
+    },
+    {
+      'Block_Type' => 1.00000000000,
+      'Handle' => 17.00012207031,
+      'Hier_Name' => 'CIC/Register',
+      'Name' => 'Register',
+      'Parent_Handle' => 0.00012207031,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 14,
+        'Registers' => 16
+      }
+    },
+    {
+      'Block_Type' => 3.00000000000,
+      'Handle' => 0.00012207031,
+      'Hier_Name' => 'CIC',
+      'Name' => 'CIC',
+      'Parent_Handle' => 0.00000000000,
+      'Resources' => {
+        'BRAMs' => 0.00000000000,
+        'DSPs' => 0.00000000000,
+        'LUTs' => 142,
+        'Registers' => 96
+      }
+    }
+  ]
+}

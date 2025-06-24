@@ -1,0 +1,4 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ip/cic_bd_cic_1_0/constrs/cic.xdc rfile:../../../cic.srcs/sources_1/bd/cic_bd/ip/cic_bd_cic_1_0/constrs/cic.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+current_instance inst
+set_property src_info {type:SCOPED_XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_multicycle_path -from [get_cells -of [filter [all_fanout -flat -endpoints [get_pins {cic_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[1].ce_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/Q}]] IS_ENABLE]] -to [get_cells -of [filter [all_fanout -flat -endpoints [get_pins {cic_default_clock_driver/clockdriver/pipelined_ce.ce_pipeline[1].ce_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp/Q}]] IS_ENABLE]] -hold 1

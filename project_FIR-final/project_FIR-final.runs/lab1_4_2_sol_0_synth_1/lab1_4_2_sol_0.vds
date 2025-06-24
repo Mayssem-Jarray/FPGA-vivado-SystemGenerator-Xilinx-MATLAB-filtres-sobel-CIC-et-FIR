@@ -1,0 +1,609 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May 15 18:19:44 2025
+# Process ID: 17036
+# Current directory: C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/lab1_4_2_sol_0_synth_1
+# Command line: vivado.exe -log lab1_4_2_sol_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab1_4_2_sol_0.tcl
+# Log file: C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/lab1_4_2_sol_0_synth_1/lab1_4_2_sol_0.vds
+# Journal file: C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/lab1_4_2_sol_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab1_4_2_sol_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/ip_fir'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/ip_sobel'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/dell/Desktop/test_ip_fir'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.cache/ip 
+Command: synth_design -top lab1_4_2_sol_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12060
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1107.152 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol_0' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/synth/lab1_4_2_sol_0.vhd:67]
+INFO: [Synth 8-3491] module 'lab1_4_2_sol' declared at 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol.vhd:1005' bound to instance 'U0' of component 'lab1_4_2_sol' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/synth/lab1_4_2_sol_0.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol.vhd:1012]
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol_default_clock_driver' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol.vhd:985]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 1 - type: integer 
+	Parameter log_2_period bound to: 1 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (1#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (2#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (3#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol_default_clock_driver' (4#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol.vhd:985]
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol_struct' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol.vhd:953]
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol_fir' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol_xlfpaddsub' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:326]
+	Parameter core_name0 bound to: lab1_4_2_sol_floating_point_v7_1_i0 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 24 - type: integer 
+	Parameter a_arith bound to: 3 - type: integer 
+	Parameter b_width bound to: 32 - type: integer 
+	Parameter b_bin_pt bound to: 24 - type: integer 
+	Parameter b_arith bound to: 3 - type: integer 
+	Parameter s_width bound to: 32 - type: integer 
+	Parameter s_bin_pt bound to: 24 - type: integer 
+	Parameter s_arith bound to: 3 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter a_tdata_width bound to: 32 - type: integer 
+	Parameter s_tdata_width bound to: 32 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'lab1_4_2_sol_floating_point_v7_1_i0' declared at 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i0/synth/lab1_4_2_sol_floating_point_v7_1_i0.vhd:59' bound to instance 'core_instance0' of component 'lab1_4_2_sol_floating_point_v7_1_i0' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:380]
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol_floating_point_v7_1_i0' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i0/synth/lab1_4_2_sol_floating_point_v7_1_i0.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-1 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_10' declared at 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i1/hdl/floating_point_v7_1_rfs.vhd:94738' bound to instance 'U0' of component 'floating_point_v7_1_10' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i0/synth/lab1_4_2_sol_floating_point_v7_1_i0.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol_floating_point_v7_1_i0' (29#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i0/synth/lab1_4_2_sol_floating_point_v7_1_i0.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol_xlfpaddsub' (30#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:326]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_1a62e35dda' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_1a62e35dda' (31#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_033a10b0d4' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_033a10b0d4' (32#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_88c0ae0f9d' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_88c0ae0f9d' (33#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_4eb3dd7417' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:107]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_4eb3dd7417' (34#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_522d156a20' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_522d156a20' (35#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_7d91e5630e' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:145]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_7d91e5630e' (36#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_ec211811ba' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:164]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_ec211811ba' (37#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol_xldelay' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:193]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+	Parameter reg_retiming bound to: 0 - type: integer 
+	Parameter reset bound to: 0 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/synth_reg.vhd:20' bound to instance 'synth_reg_srl_inst' of component 'synth_reg' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'synth_reg' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:31]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 2 - type: integer 
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u1' to cell 'SRLC32E' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:64]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e' (38#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg' (39#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol_xldelay' (40#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol_xlfpmult' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:494]
+	Parameter core_name0 bound to: lab1_4_2_sol_floating_point_v7_1_i1 - type: string 
+	Parameter a_width bound to: 32 - type: integer 
+	Parameter a_bin_pt bound to: 24 - type: integer 
+	Parameter a_arith bound to: 3 - type: integer 
+	Parameter b_width bound to: 32 - type: integer 
+	Parameter b_bin_pt bound to: 24 - type: integer 
+	Parameter b_arith bound to: 3 - type: integer 
+	Parameter p_width bound to: 32 - type: integer 
+	Parameter p_bin_pt bound to: 24 - type: integer 
+	Parameter p_arith bound to: 3 - type: integer 
+	Parameter rst_width bound to: 1 - type: integer 
+	Parameter rst_bin_pt bound to: 0 - type: integer 
+	Parameter rst_arith bound to: 1 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter a_tdata_width bound to: 32 - type: integer 
+	Parameter p_tdata_width bound to: 32 - type: integer 
+	Parameter extra_registers bound to: 0 - type: integer 
+	Parameter latency bound to: 3 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter c_latency bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'lab1_4_2_sol_floating_point_v7_1_i1' declared at 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i1/synth/lab1_4_2_sol_floating_point_v7_1_i1.vhd:59' bound to instance 'core_instance0' of component 'lab1_4_2_sol_floating_point_v7_1_i1' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:547]
+INFO: [Synth 8-638] synthesizing module 'lab1_4_2_sol_floating_point_v7_1_i1' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i1/synth/lab1_4_2_sol_floating_point_v7_1_i1.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg484-1 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_10' declared at 'c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i1/hdl/floating_point_v7_1_rfs.vhd:94738' bound to instance 'U0' of component 'floating_point_v7_1_10' [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i1/synth/lab1_4_2_sol_floating_point_v7_1_i1.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol_floating_point_v7_1_i1' (49#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/lab1_4_2_sol_floating_point_v7_1_i1/synth/lab1_4_2_sol_floating_point_v7_1_i1.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol_xlfpmult' (50#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol_entity_declarations.vhd:494]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol_fir' (51#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol_struct' (52#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol.vhd:953]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol' (53#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/xil_defaultlib/hdl/lab1_4_2_sol.vhd:1012]
+INFO: [Synth 8-256] done synthesizing module 'lab1_4_2_sol_0' (54#1) [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/synth/lab1_4_2_sol_0.vhd:67]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1233.637 ; gain = 126.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1233.637 ; gain = 126.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1233.637 ; gain = 126.484
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.958 . Memory (MB): peak = 1233.637 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2685 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/constrs/lab1_4_2_sol.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.srcs/sources_1/ip/lab1_4_2_sol_0/constrs/lab1_4_2_sol.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/lab1_4_2_sol_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/lab1_4_2_sol_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1357.098 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 331 instances were transformed.
+  FDE => FDRE: 331 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.377 . Memory (MB): peak = 1364.305 ; gain = 7.207
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1364.305 ; gain = 257.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1364.305 ; gain = 257.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/lab1_4_2_sol_0_synth_1/dont_touch.xdc, line 15).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult1/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult10/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult11/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult2/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult3/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult4/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult5/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult6/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult7/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult8/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/mult9/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub1/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub10/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub11/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub2/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub3/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub4/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub5/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub6/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub7/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub8/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U0/lab1_4_2_sol_struct/fir/addsub9/\comp0.core_instance0 . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1364.305 ; gain = 257.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1364.305 ; gain = 257.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/SUB_DELAY' (delay__parameterized0) to 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/SUBTRACT_PREADD_DEL'
+INFO: [Synth 8-223] decloning instance 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'lab1_4_2_sol_floating_point_v7_1_i0:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/lab1_4_2_sol_struct/fir/constant1' (sysgen_constant_033a10b0d4) to 'U0/lab1_4_2_sol_struct/fir/constant11'
+INFO: [Synth 8-223] decloning instance 'U0/lab1_4_2_sol_struct/fir/constant10' (sysgen_constant_88c0ae0f9d) to 'U0/lab1_4_2_sol_struct/fir/constant2'
+INFO: [Synth 8-223] decloning instance 'U0/lab1_4_2_sol_struct/fir/constant3' (sysgen_constant_4eb3dd7417) to 'U0/lab1_4_2_sol_struct/fir/constant9'
+INFO: [Synth 8-223] decloning instance 'U0/lab1_4_2_sol_struct/fir/constant4' (sysgen_constant_522d156a20) to 'U0/lab1_4_2_sol_struct/fir/constant8'
+INFO: [Synth 8-223] decloning instance 'U0/lab1_4_2_sol_struct/fir/constant5' (sysgen_constant_7d91e5630e) to 'U0/lab1_4_2_sol_struct/fir/constant7'
+INFO: [Synth 8-223] decloning instance 'lab1_4_2_sol_floating_point_v7_1_i1:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'lab1_4_2_sol_floating_point_v7_1_i1:/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'lab1_4_2_sol_floating_point_v7_1_i1:/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'lab1_4_2_sol_floating_point_v7_1_i1:/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1364.305 ; gain = 257.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 1364.305 ; gain = 257.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1364.305 ; gain = 257.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 1387.273 ; gain = 280.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1387.273 ; gain = 280.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 1387.273 ; gain = 280.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 1387.273 ; gain = 280.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1387.273 ; gain = 280.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1387.273 ; gain = 280.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1387.273 ; gain = 280.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    66|
+|2     |DSP48E1 |    33|
+|5     |LUT1    |    55|
+|6     |LUT2    |   583|
+|7     |LUT3    |   649|
+|8     |LUT4    |  1034|
+|9     |LUT5    |   616|
+|10    |LUT6    |  2134|
+|11    |MUXCY   |  1353|
+|12    |MUXF7   |    22|
+|13    |MUXF8   |    11|
+|14    |SRLC32E |   320|
+|15    |XORCY   |   759|
+|16    |FDE     |   331|
+|17    |FDRE    |  1001|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1387.273 ; gain = 280.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:09 . Memory (MB): peak = 1387.273 ; gain = 149.453
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 1387.273 ; gain = 280.121
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.647 . Memory (MB): peak = 1387.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2575 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1402.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 716 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 385 instances
+  FDE => FDRE: 331 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+151 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:34 . Memory (MB): peak = 1402.953 ; gain = 295.801
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/lab1_4_2_sol_0_synth_1/lab1_4_2_sol_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP lab1_4_2_sol_0, cache-ID = 71c82b9963f42569
+INFO: [Coretcl 2-1174] Renamed 946 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/lab1_4_2_sol_0_synth_1/lab1_4_2_sol_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab1_4_2_sol_0_utilization_synth.rpt -pb lab1_4_2_sol_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 15 18:21:41 2025...

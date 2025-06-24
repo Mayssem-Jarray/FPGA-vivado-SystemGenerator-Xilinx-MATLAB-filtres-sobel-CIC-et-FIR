@@ -1,0 +1,19 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2020.1                 D:/Xilinx/Vivado/2020.1
+Matlab 9.6.0.1072779 (R2019a)           C:\Program Files\MATLAB\R2019a
+Vivado 2020.1                           D:/Xilinx/Vivado/2020.1
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: XObjectPool::Pool: lookup failed
+     Block: 'matlab_fir/Gateway In1'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'matlab_fir/Gateway In1'
+
+Details:
+XObjectPool::Pool: lookup failed
+--------------------------------------------------------------------------------

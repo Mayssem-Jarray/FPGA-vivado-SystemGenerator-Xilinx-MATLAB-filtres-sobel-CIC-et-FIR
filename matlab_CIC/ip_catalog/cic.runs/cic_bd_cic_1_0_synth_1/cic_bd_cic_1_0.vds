@@ -1,0 +1,628 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 22 12:56:08 2025
+# Process ID: 18800
+# Current directory: C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1
+# Command line: vivado.exe -log cic_bd_cic_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cic_bd_cic_1_0.tcl
+# Log file: C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1/cic_bd_cic_1_0.vds
+# Journal file: C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cic_bd_cic_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top cic_bd_cic_1_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18664 
+WARNING: [Synth 8-1958] event expressions must result in a singular type [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_axi_lite_interface_verilog.v:240]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 842.578 ; gain = 187.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cic_bd_cic_1_0' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ip/cic_bd_cic_1_0/synth/cic_bd_cic_1_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'cic' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'cic_axi_lite_interface' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:373]
+INFO: [Synth 8-3491] module 'cic_axi_lite_interface_verilog' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_axi_lite_interface_verilog.v:38' bound to instance 'inst' of component 'cic_axi_lite_interface_verilog' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:400]
+INFO: [Synth 8-6157] synthesizing module 'cic_axi_lite_interface_verilog' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_axi_lite_interface_verilog.v:38]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_NUM_OFFSETS bound to: 1 - type: integer 
+	Parameter ADDR_LSB bound to: 3 - type: integer 
+	Parameter ADDR_MSB bound to: 1 - type: integer 
+	Parameter DEC_SIZE bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_axi_lite_interface_verilog.v:123]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_axi_lite_interface_verilog.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'cic_axi_lite_interface_verilog' (1#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_axi_lite_interface_verilog.v:38]
+INFO: [Synth 8-256] done synthesizing module 'cic_axi_lite_interface' (2#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'cic_default_clock_driver' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:59]
+	Parameter period bound to: 2 - type: integer 
+	Parameter log_2_period bound to: 2 - type: integer 
+	Parameter pipeline_regs bound to: 5 - type: integer 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_single_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_single_reg_w_init' (3#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg_w_init' (4#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized0' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized0' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-113] binding component instance 'fdse_comp' to cell 'FDSE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized0' (4#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized0' (4#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 1 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:291]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (5#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'cic_default_clock_driver' (6#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'cic_struct' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'sysgen_addsub_ce3e176f5e' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized1' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 3 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 3'b010 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 3 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 3'b010 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized1' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 3 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 3'b010 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdse_comp' to cell 'FDSE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:97]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized1' (6#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized1' (6#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element op_mem_91_20_reg[0] was removed.  [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:79]
+WARNING: [Synth 8-6014] Unused sequential element cout_mem_92_22_reg[0] was removed.  [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_addsub_ce3e176f5e' (7#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'sysgen_addsub_ecb5cf3cd9' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:140]
+WARNING: [Synth 8-6014] Unused sequential element op_mem_91_20_reg[0] was removed.  [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:167]
+WARNING: [Synth 8-6014] Unused sequential element cout_mem_92_22_reg[0] was removed.  [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_addsub_ecb5cf3cd9' (8#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_6f6c75d113' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:227]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_6f6c75d113' (9#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'cic_xlregister' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:302]
+	Parameter d_width bound to: 16 - type: integer 
+	Parameter init_value bound to: 16'b0000000100000000 
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000100000000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'synth_reg_inst' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized2' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000100000000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000100000000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized2' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000100000000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdse_comp' to cell 'FDSE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:97]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized2' (9#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized2' (9#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'cic_xlregister' (10#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:302]
+INFO: [Synth 8-638] synthesizing module 'cic_xlregister__parameterized0' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:302]
+	Parameter d_width bound to: 16 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:31' bound to instance 'synth_reg_inst' of component 'synth_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized3' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+	Parameter latency bound to: 1 - type: integer 
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at 'c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized3' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+	Parameter width bound to: 16 - type: integer 
+	Parameter init_index bound to: 2 - type: integer 
+	Parameter init_value bound to: 16'b0000000000000000 
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_single_reg_w_init__parameterized3' (10#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_synth_reg_w_init__parameterized3' (10#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'cic_xlregister__parameterized0' (10#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic_entity_declarations.vhd:302]
+INFO: [Synth 8-256] done synthesizing module 'cic_struct' (11#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'cic' (12#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ipshared/0c7e/hdl/cic.vhd:217]
+INFO: [Synth 8-6155] done synthesizing module 'cic_bd_cic_1_0' (13#1) [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ip/cic_bd_cic_1_0/synth/cic_bd_cic_1_0.v:57]
+WARNING: [Synth 8-3331] design sysgen_delay_6f6c75d113 has unconnected port clr
+WARNING: [Synth 8-3331] design cic_axi_lite_interface_verilog has unconnected port cic_s_axi_awaddr
+WARNING: [Synth 8-3331] design cic_axi_lite_interface_verilog has unconnected port cic_s_axi_araddr
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 882.859 ; gain = 228.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 882.859 ; gain = 228.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 882.859 ; gain = 228.059
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ip/cic_bd_cic_1_0/constrs/cic.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ip/cic_bd_cic_1_0/constrs/cic.xdc:4]
+Finished Parsing XDC File [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ip/cic_bd_cic_1_0/constrs/cic.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.srcs/sources_1/bd/cic_bd/ip/cic_bd_cic_1_0/constrs/cic.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cic_bd_cic_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cic_bd_cic_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1018.918 ; gain = 3.551
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1018.918 ; gain = 364.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1018.918 ; gain = 364.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1018.918 ; gain = 364.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1018.918 ; gain = 364.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 5     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 24    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cic_axi_lite_interface_verilog 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 5     
+Module xlclockdriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sysgen_addsub_ce3e176f5e 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+Module sysgen_addsub_ecb5cf3cd9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+Module sysgen_delay_6f6c75d113 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design cic has unconnected port cic_s_axi_awaddr
+WARNING: [Synth 8-3331] design cic has unconnected port cic_s_axi_araddr
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cic_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp )
+INFO: [Synth 8-3886] merging instance 'inst/cic_axi_lite_interface/inst/axi_rresp_reg[0]' (FDRE) to 'inst/cic_axi_lite_interface/inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cic_axi_lite_interface/inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/cic_axi_lite_interface/inst/axi_bresp_reg[0]' (FDRE) to 'inst/cic_axi_lite_interface/inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\cic_axi_lite_interface/inst/axi_bresp_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (cic_default_clock_driver/clockdriver/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[5].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[4].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_1.fdse_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[3].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[2].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_1.fdse_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[1].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub1/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub1/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub1/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub2/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub2/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub2/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub3/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub3/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub3/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub4/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub4/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub4/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub6/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub6/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub6/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub7/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub7/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[1].bit_is_1.fdse_comp) is unused and will be removed from module cic.
+WARNING: [Synth 8-3332] Sequential element (cic_struct/addsub7/prev_mode_93_22_reg_inst/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[2].bit_is_0.fdre_comp) is unused and will be removed from module cic.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1018.918 ; gain = 364.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1018.918 ; gain = 364.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1018.918 ; gain = 364.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1018.918 ; gain = 364.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.457 ; gain = 369.656
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.457 ; gain = 369.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.457 ; gain = 369.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.457 ; gain = 369.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.457 ; gain = 369.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.457 ; gain = 369.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|cic         | cic_struct/delay/op_mem_20_24_reg[7][15]  | 8      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|cic         | cic_struct/delay1/op_mem_20_24_reg[7][15] | 8      | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|cic         | cic_struct/delay2/op_mem_20_24_reg[7][15] | 8      | 16    | NO           | NO                 | YES               | 16     | 0       | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    25|
+|2     |LUT1   |     3|
+|3     |LUT2   |   128|
+|4     |LUT3   |     3|
+|5     |LUT4   |     2|
+|6     |LUT5   |     1|
+|7     |LUT6   |     5|
+|8     |SRL16E |    48|
+|9     |FDRE   |   168|
+|10    |FDSE   |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------+----------------------------------------------------+------+
+|      |Instance                                      |Module                                              |Cells |
++------+----------------------------------------------+----------------------------------------------------+------+
+|1     |top                                           |                                                    |   386|
+|2     |  inst                                        |cic                                                 |   386|
+|3     |    cic_axi_lite_interface                    |cic_axi_lite_interface                              |   116|
+|4     |      inst                                    |cic_axi_lite_interface_verilog                      |   116|
+|5     |    cic_default_clock_driver                  |cic_default_clock_driver                            |     7|
+|6     |      clockdriver                             |xlclockdriver                                       |     7|
+|7     |        \pipelined_ce.ce_pipeline[1].ce_reg   |xil_defaultlib_synth_reg_w_init                     |     1|
+|8     |          \latency_gt_0.fd_array[1].reg_comp  |xil_defaultlib_single_reg_w_init_14                 |     1|
+|9     |        \pipelined_ce.ce_pipeline[2].ce_reg   |xil_defaultlib_synth_reg_w_init__parameterized0     |     1|
+|10    |          \latency_gt_0.fd_array[1].reg_comp  |xil_defaultlib_single_reg_w_init__parameterized0_13 |     1|
+|11    |        \pipelined_ce.ce_pipeline[3].ce_reg   |xil_defaultlib_synth_reg_w_init_9                   |     1|
+|12    |          \latency_gt_0.fd_array[1].reg_comp  |xil_defaultlib_single_reg_w_init_12                 |     1|
+|13    |        \pipelined_ce.ce_pipeline[4].ce_reg   |xil_defaultlib_synth_reg_w_init__parameterized0_10  |     1|
+|14    |          \latency_gt_0.fd_array[1].reg_comp  |xil_defaultlib_single_reg_w_init__parameterized0    |     1|
+|15    |        \pipelined_ce.ce_pipeline[5].ce_reg   |xil_defaultlib_synth_reg_w_init_11                  |     2|
+|16    |          \latency_gt_0.fd_array[1].reg_comp  |xil_defaultlib_single_reg_w_init                    |     2|
+|17    |    cic_struct                                |cic_struct                                          |   263|
+|18    |      addsub1                                 |sysgen_addsub_ce3e176f5e                            |     4|
+|19    |      addsub2                                 |sysgen_addsub_ce3e176f5e_0                          |    20|
+|20    |      addsub3                                 |sysgen_addsub_ce3e176f5e_1                          |     4|
+|21    |      addsub4                                 |sysgen_addsub_ce3e176f5e_2                          |     4|
+|22    |      addsub6                                 |sysgen_addsub_ce3e176f5e_3                          |    20|
+|23    |      addsub7                                 |sysgen_addsub_ecb5cf3cd9                            |    21|
+|24    |      delay                                   |sysgen_delay_6f6c75d113                             |    32|
+|25    |      delay1                                  |sysgen_delay_6f6c75d113_4                           |    32|
+|26    |      delay2                                  |sysgen_delay_6f6c75d113_5                           |    32|
+|27    |      register1                               |cic_xlregister__parameterized0                      |    32|
+|28    |        synth_reg_inst                        |xil_defaultlib_synth_reg_w_init__parameterized3_7   |    32|
+|29    |          \latency_gt_0.fd_array[1].reg_comp  |xil_defaultlib_single_reg_w_init__parameterized3_8  |    32|
+|30    |      register2                               |cic_xlregister__parameterized0_6                    |    32|
+|31    |        synth_reg_inst                        |xil_defaultlib_synth_reg_w_init__parameterized3     |    32|
+|32    |          \latency_gt_0.fd_array[1].reg_comp  |xil_defaultlib_single_reg_w_init__parameterized3    |    32|
+|33    |      register_x0                             |cic_xlregister                                      |    30|
+|34    |        synth_reg_inst                        |xil_defaultlib_synth_reg_w_init__parameterized2     |    30|
+|35    |          \latency_gt_0.fd_array[1].reg_comp  |xil_defaultlib_single_reg_w_init__parameterized2    |    30|
++------+----------------------------------------------+----------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.457 ; gain = 369.656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1024.457 ; gain = 233.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1024.457 ; gain = 369.656
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+120 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1038.277 ; gain = 651.766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.277 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1/cic_bd_cic_1_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP cic_bd_cic_1_0, cache-ID = 51e4a1a22be7ddac
+INFO: [Coretcl 2-1174] Renamed 34 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1038.277 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/moham/OneDrive/Bureau/ug948-design-files/ip_catalog/cic.runs/cic_bd_cic_1_0_synth_1/cic_bd_cic_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cic_bd_cic_1_0_utilization_synth.rpt -pb cic_bd_cic_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 22 12:56:39 2025...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May 15 18:29:20 2025
+# Process ID: 14264
+# Current directory: C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/synth_1
+# Command line: vivado.exe -log aa.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aa.tcl
+# Log file: C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/synth_1/aa.vds
+# Journal file: C:/Users/dell/Desktop/PFA_PROJET_FINAL/project_FIR-final/project_FIR-final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source aa.tcl -notrace
